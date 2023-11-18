@@ -68,4 +68,10 @@ aws s3 **cp**  --no-sign-request --no-verify-ssl --recursive s3://era5-pds/2022/
 
 **Copying selected files across different folders**
 
+
 aws s3 cp  --no-sign-request --no-verify-ssl --recursive s3://era5-pds/2022/   nameOfChosenFolder/  **--exclude "\*" --include "\*temperature.nc"**
+
+## A useful tutorial
+Particularly, pay attention to how to slide an xarray by coordinates, so that you can focus on your area of interest (for example, you could cover only the coordinates for the UK).
+
+https://spire.com/tutorial/spire-weather-tutorial-intro-to-processing-grib2-data-with-python/
